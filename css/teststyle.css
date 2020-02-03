@@ -1,0 +1,22 @@
+.container{
+    background-color: blueviolet;
+    border: 5px solid chartreuse;
+    overflow: hidden;
+}
+.first{
+    border: 2px solid blue;
+    width: 30%;
+    background-color: cyan;
+    float: left;   
+}
+.second{
+    border: 2px solid blue;
+    width: 65%;
+    background-color: darkcyan;
+    float: right;
+}
+.third{
+    border: 2px solid blue;
+    background-color: rgb(185, 253, 153);
+    clear: both;
+}
