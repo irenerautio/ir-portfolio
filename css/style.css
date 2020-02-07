@@ -9,10 +9,11 @@ body{
     text-shadow: 0 0 4px rgba(0, 0, 0, 0.72), 0 0 14px rgba(0, 0, 0, 0.45);
     display: grid;
     max-width: 1000px;
-    margin: 50px auto;
+    max-height: fit-content;
+    margin: auto auto;
     grid-gap: 20px;
     grid-template-columns: 3fr 14fr 3fr;
-    grid-template-rows: 2fr 11fr 1fr;
+    grid-template-rows: 1fr 5fr 1fr;
     }
 
 .header{
@@ -20,7 +21,7 @@ body{
     grid-column: 2 /-2;
 }
 .header img{
-    height: 23px;
+    height: 24px;
     color: antiquewhite;
 }
 
@@ -103,13 +104,14 @@ h1, p, a{
 .overlay-inner{
     background: white;
     width: 700px;
-    padding: 20px;
+    padding: 10px;
     }
 
 .close{
     border: none;
     background-color: #ff00ff00;
     font-size: 50px;
+    position: fixed;
 }
   
 .overlay img {
