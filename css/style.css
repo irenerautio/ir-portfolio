@@ -105,6 +105,7 @@ h1, p, a{
     background: white;
     width: 700px;
     padding: 10px;
+    position: fixed;
     }
 
 .close{
