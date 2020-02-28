@@ -102,7 +102,7 @@ h1, p, a{
   
 .overlay-inner{
     background: white;
-    width: 700px;
+    /* width: 700px; */
     padding: 10px;
     display: flex;
     justify-items: center;
@@ -117,5 +117,13 @@ h1, p, a{
     }
   
 .overlay img {
-    width: 100%;
+    max-width: 100%;
+    }
+
+.portrait{
+    width: 700px;
+    }
+    
+.landscape{
+    height: 920px;
     }

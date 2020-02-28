@@ -23,43 +23,43 @@
     
     <section class="gallery">
         <div class="item">
-            <img src="images/beliameth_reborn.png">
+            <img class="portrait" src="images/beliameth_reborn.png">
             <div class="item__overlay">
                 <button>View&RightArrow;</button>
             </div>
         </div>
         <div class="item">
-            <img src="images/akio_facepw.png">
+            <img class="portrait" src="images/akio_facepw.png">
             <div class="item__overlay">
                 <button>View&RightArrow;</button>
             </div>
         </div>
         <div class="item">
-            <img src="images/offwiththeirheads.png">
+            <img class="landscape" src="images/offwiththeirheads.png">
             <div class="item__overlay">
                 <button>View&RightArrow;</button>
             </div>
         </div>
         <div class="item">
-            <img src="images/beliameth_copic.png">
+            <img class="portrait" src="images/beliameth_copic.png">
             <div class="item__overlay">
                 <button>View&RightArrow;</button>
             </div>
         </div>
         <div class="item">
-            <img src="images/beliameth_sassy.png">
+            <img class="portrait" src="images/beliameth_sassy.png">
             <div class="item__overlay">
                 <button>View&RightArrow;</button>
             </div>
         </div>
         <div class="item">
-            <img src="images/anubis_sketch_to_3D.png">
+            <img class="landscape" src="images/anubis_sketch_to_3D.png">
             <div class="item__overlay">
                 <button>View&RightArrow;</button>
             </div>
         </div>
         <div class="item">
-            <img src="images/oliver_final.png">
+            <img class="portrait" src="images/oliver_final.png">
             <div class="item__overlay">
                 <button>View&RightArrow;</button>
             </div>
@@ -81,6 +81,14 @@
     function handleClick(e) {
         const src = e.currentTarget.querySelector('img').src;
         overlayImage.src = src;
+        if(overlayImage.width >= 2500) {
+            console.log(overlayImage.width);
+            
+        overlayImage.className = "portrait";
+        } else {
+            console.log(overlayImage.width);
+            overlayImage.className = "landscape";
+        }
         overlay.classList.add('open');
     }
 
