@@ -82,11 +82,8 @@
         const src = e.currentTarget.querySelector('img').src;
         overlayImage.src = src;
         if(overlayImage.width >= 2500) {
-            console.log(overlayImage.width);
-            
-        overlayImage.className = "portrait";
+            overlayImage.className = "portrait";
         } else {
-            console.log(overlayImage.width);
             overlayImage.className = "landscape";
         }
         overlay.classList.add('open');

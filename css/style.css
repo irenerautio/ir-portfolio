@@ -102,7 +102,6 @@ h1, p, a{
   
 .overlay-inner{
     background: white;
-    /* width: 700px; */
     padding: 10px;
     display: flex;
     justify-items: center;
